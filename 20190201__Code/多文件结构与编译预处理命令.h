@@ -24,7 +24,7 @@ class Point {
 	static int count; //静态数据成员
 };
 //文件2，类的实现，Point.cpp
-#include"Point.h"
+#include"Point.h"       //双引号中加文件名，是在当前目录搜索
 #include<iostream>
 using namespace std;
 
