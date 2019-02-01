@@ -65,7 +65,9 @@ void R::print()const{
 
 int main(){
 	R a(5,4);
-	a.print();  //调用void print() const
+	a.print();  //调用void print()
+	constR b(20,52);
+	b.print();  //调用void print() const
 	
 	return 0;
 }
