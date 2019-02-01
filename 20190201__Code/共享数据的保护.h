@@ -61,7 +61,7 @@ void R::print(){
 
 void R::print()const{
 	cout<<r1<<";"<<r2<<endl;
-}
+} 
 
 int main(){
 	R a(5,4);
