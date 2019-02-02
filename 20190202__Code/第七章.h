@@ -37,13 +37,13 @@ using namespace std;
 
 int main(){
 	int a[10];
-	int b[10];
-	for (int i=0;i<10;i++){
+	int b[10];					//定义数组
+	for (int i=0;i<10;i++){		//初始化赋值，用循环
 		a[i]=i*2-1;
 		b[10-i-1]=a[i];
 	}
 	for (int i=0;i<10;i++){
-		cout<<"a["<<i<<"]="<<a[i]<<endl;
+		cout<<"a["<<i<<"]="<<a[i]<<endl;	//打印数组
 		cout<<"b["<<i<<"]="<<b[i]<<endl;
 	}
 	return 0;
