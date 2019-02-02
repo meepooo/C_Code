@@ -69,9 +69,38 @@ Public:
 	static int getClientNum();
 };
 
+//.cpp
+#include"client.h"
+#include"stdafx.h"
+//静态数据成员的引用，注意加上“类名::”来修饰
+void Client::ChangeServerName(char name){
+	Client::ServverName=name;
+	Client::ClientNum ++;
+}
+int Client::getClientNum(){
+	
+	return Client::ClientNum;
+}
 
 
+//
+#include<iostream>
+#include"client.h"
+using namespace std;
 
+int Client::ClientNum=0;
+char Client::ServverName='a';
+
+int main(){
+	Client	c1;
+	c1.ChangeServerName('a');
+	cout<<c1.getClientNum()<<endl;
+	Client c2;
+	c2.ChangeServerName('b');
+	cout<<c1.getClientNum()<<endl;
+	
+	return 0;
+}
 
 
 
