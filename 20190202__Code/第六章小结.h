@@ -47,3 +47,24 @@ int main(){
 }
 
 
+/*
+例二：实现客户机(CLIENT)类
+<>声明字符型静态数据成员ServerName,保存其服务器名称
+<>整型静态数据ClientNum,记录已定义的客户数量
+<>定义静态函数ChangeServerName()改变服务器名称
+·在头文件client.h中声明类
+·在文件client.cpp中实现
+·在文件test.cpp中测试这个类
+·观察相应的成员变量取值的变化情况
+*/
+
+
+
+
+
+
+
+
+
+
+
