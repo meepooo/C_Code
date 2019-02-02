@@ -58,8 +58,16 @@ int main(){
 ·观察相应的成员变量取值的变化情况
 */
 
+#ifdef CLIENT_H_
+#define CLIENT_H_
 
-
+class Client{
+	static char ServverName;
+	static int ClientNum;
+Public:
+	static void ChangeServerName(char name);
+	static int getClientNum();
+};
 
 
 
