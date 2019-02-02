@@ -30,3 +30,29 @@
 <>例如：
 	a[0]=a[5]+a[7]-a[2*3]
 	b[1][2]=b[2][3]/2
+*/
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	int a[10];
+	int b[10];
+	for (int i=0;i<10;i++){
+		a[i]=i*2-1;
+		b[10-i-1]=a[i];
+	}
+	for (int i=0;i<10;i++){
+		cout<<"a["<<i<<"]="<<a[i]<<endl;
+		cout<<"b["<<i<<"]="<<b[i]<<endl;
+	}
+	return 0;
+}
+	
+	
+	
+	
+	
+	
+	
+	
