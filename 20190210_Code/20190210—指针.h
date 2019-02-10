@@ -31,3 +31,22 @@ int *pa =&a;
 任何类型对象的地址
 
 例：void *general;        	*/
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	int i;				 //定义int 型数i
+	int *ptr = &i;		 //取i的地址赋给ptr	
+	i=10;				 //int 型数赋初值
+	cout<<"i= "<<i<<endl;//输出int 型数的值
+	cout<<"*ptr = "<< *ptr<<endl;//输出int型指针所指地址的内容
+	return 0;
+}
+
+
+//运行结果:
+//i=10
+//*ptr =10
+
