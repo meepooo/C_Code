@@ -61,3 +61,4 @@ int main(){
 	cout<<"*pint = "<<*pint<<endl;
 	return 0;
 }
+
