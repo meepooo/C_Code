@@ -10,5 +10,15 @@ public class Test_20190212_while {
 			a++;							//迭代
 		}
 		System.out.println("循环结束");
+		
+		//计算从1累加到100
+		int b = 1;
+		int sum =0;
+		while (b<=100) {
+			sum = sum+b;
+			b++;
+		}
+		System.out.println("和为：" +sum);
+		
 	}
 }
