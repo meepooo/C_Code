@@ -17,18 +17,21 @@ package leecode;
  *				A.必须至少存在（N-1）个数组
  *				B.[[1,3],[1,4],[2,3],[2,4],[4,3]]
  *				C.存在只有一个数没有出现在数组第一个
- *				D.
- * 
+ *
+ *				D.有一个数(法官)出现（N-1）次，且这个数(法官)不在数组第一个
+ *
+ * 				E.找到出现(N-1)次的数，且这个数不在第1，3，5，7，9....位上
  * */
 public class findJudge {
 			public static void main(String[] args) {
 				int N = 0;
 				int[][] trust = {{1,3},{1,4},{2,3},{2,4},{4,3}};
-				System.out.println(trust.length);
+				//System.out.println(trust.length);
 				findJudge( N,trust);
 			}
 			
 			public static int findJudge(int N, int[][] trust) {
+			
 				//必须至少存在（N-1）个数组
 				if(trust.length<(N-1)) {
 					return -1;
@@ -36,15 +39,20 @@ public class findJudge {
 					for(int x=0;x<trust.length;x++){
 						for(int y=0;y<trust[y].length;y++){
 							System.out.print(trust[x][y]);
-							int array =trust[x][y];
-							System.out.print("---------");
+							//int array =trust[x][y];
+							//System.out.print("---------");
 							//System.out.println(array);
-							int m=((int)array/10)%10;
+							//int m=((int)array/10)%10;
+							//int m=(int)array%10;
 							//System.out.print(m);
 				//存在只有一个数没有出现在数组第一个
 							
+				//法官只出现（N-1）次，且法官不在数组第一个
+							//找到出现(N-1)次的数，且这个数不在第1，3，5，7，9....位上
+									//找到出现(N-1)次的数，且这个数不在奇数位上
+						
 						}
-						System.out.println();
+						//System.out.println(array);
 					}
 					return N;
 				
