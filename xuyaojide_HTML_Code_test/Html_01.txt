@@ -1,0 +1,91 @@
+"link.htm"文件内指定的节使用 <a name="C10"> 进行标识。
+
+
+
+两个框架。左侧的导航框架包含了一个链接列表，这些链接将第二个框架作为目标。
+第二个框架显示被链接的文档。导航框架其中的链接指向目标文件中指定的节。
+
+--------------------------------------------------------------------------
+
+背景图像是否增加了页面的加载时间。小贴士：图像文件不应超过 10k。
+背景图像是否与页面中的其他图象搭配良好。
+背景图像是否与页面中的文字颜色搭配良好。
+图像在页面中平铺后，看上去还可以吗？
+对文字的注意力被背景图像喧宾夺主了吗？
+
+
+属性值可以是十六进制数、RGB 值或颜色名。
+<body bgcolor="#000000">
+<body bgcolor="rgb(0,0,0)">
+<body bgcolor="black">
+
+
+背景属性将背景设置为图像。属性值为图像的URL。
+如果图像尺寸小于浏览器窗口，那么图像将在整个浏览器窗口进行复制。
+<body background="clouds.gif">
+<body background="http://www.w3school.com.cn/clouds.gif">
+
+
+基本的注意事项 - 有用的提示：
+<body> 标签中的背景颜色（bgcolor）、背景（background）和
+文本（text）属性在最新的 HTML 标准（HTML4 和 XHTML）中已被废弃。
+W3C 在他们的推荐标准中已删除这些属性。
+
+应该使用层叠样式表（CSS）来定义 HTML 元素的布局和显示属性。
+
+----------------------------------------------------------------
+JavaScript 使 HTML 页面具有更强的动态和交互性。
+
+插入一段脚本
+如何将脚本插入 HTML 文档。
+使用 <noscript> 标签
+如何应对不支持脚本或禁用脚本的浏览器。
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+document.write("Hello World!")
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>不支持 JavaScript 的浏览器将显示 noscript 元素中的文本。</p>
+ 
+</body>
+</html>
+
+
+
+HTML script 元素
+<script> 标签用于定义客户端脚本，比如 JavaScript。
+
+script 元素既可包含脚本语句，也可通过 src 属性指向外部脚本文件。
+
+必需的 type 属性规定脚本的 MIME 类型。
+
+JavaScript 最常用于图片操作、表单验证以及内容动态更新。
+
+下面的脚本会向浏览器输出“Hello World!”：
+
+<script type="text/javascript">
+document.write("Hello World!")
+</script>
+
+
+<noscript> 标签
+<noscript> 标签提供无法使用脚本时的替代内容，
+比方在浏览器禁用脚本时，或浏览器不支持客户端脚本时。
+
+noscript 元素可包含普通 HTML 页面的 body 元素中能够找到的所有元素。
+
+只有在浏览器不支持脚本或者禁用脚本时，才会显示 noscript 元素中的内容：
+
+<script type="text/javascript">
+document.write("Hello World!")
+</script>
+<noscript>Your browser does not support JavaScript!</noscript>
+
+
+
+
